@@ -5,7 +5,8 @@ Partition Tolerance refers to a situation where the system is up and running eve
 
 
 Partion Tolerance is a common scenario in distributed system.
-All three C,A and P cannot be achieved simultaneously.The reason for that is we want the system to be consistent and also be available while ensuring that system is partion 
-tolerant.Assume that we have A,B and C nodes.B does some computation and this should be replicated across the other nodes for that we need a communcation between them.However,
-due to network partition the communcation between the nodes is lost and we are unable to replicate the data across all the nodes,hence consistency cannot be achieved.
+All three C,A and P cannot be achieved simultaneously.The reason for that is we want the system to be consistent and also be available while ensuring 
+that system is partion tolerant.Assume that we have A,B and C nodes.B does some computation and this should be replicated across the other nodes
+for that we need a communcation between them.However,due to network partition the communcation between the nodes is lost and we are unable to 
+replicate the data across all the nodes,hence consistency cannot be achieved.
 Therefore,C,A and P are not possible to implement in a system.
