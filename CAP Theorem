@@ -10,3 +10,16 @@ that system is partion tolerant.Assume that we have A,B and C nodes.B does some 
 for that we need a communcation between them.However,due to network partition the communcation between the nodes is lost and we are unable to 
 replicate the data across all the nodes,hence consistency cannot be achieved.
 Therefore,C,A and P are not possible to implement in a system.
+
+However either CA or CP or AP can be achieved.
+Consistency and Partition Tolerance (CP) can be prioritized over Availability. In the event of a network partition, systems receiving updates from
+disconnected nodes are temporarily taken offline. This approach ensures that consistency is maintained without the immediate concern of keeping 
+those nodes synchronized.
+
+Achieving Availability and Partition Tolerance can come at the expense of Consistency. 
+During network partitions, serving potentially stale data becomes acceptable since maintaining strict consistency is deprioritized in such situations.
+Maintaining Consistency and Availability comes with the challenge of handling network partitions. When a network partition occurs, the system waits until all nodes are available and synchronized again 
+before proceeding, ensuring data consistency across the network.
+
+But in real world scenarios achieving CA is not possible.In distributed system,network partion is something that is very common and just becoz of network partion we just 
+cannot make our entire system temporarily offline.Hence CA is not preferred in real time.Its CP or AP mostly.
