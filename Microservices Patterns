@@ -2,7 +2,7 @@
 
 This document provides an overview of three key patterns used in microservices architecture: Strangler Pattern, Saga Pattern, and CQRS (Command Query Responsibility Segregation). It also discusses approaches to data management in microservices.
 
-### Patterns Covered:
+## Patterns Covered:
 
 1. **Strangler Pattern**
 2. **Saga Pattern**
@@ -10,7 +10,7 @@ This document provides an overview of three key patterns used in microservices a
 
 ---
 
-### Strangler Pattern
+## Strangler Pattern
 
 **Purpose:** Gradually refactor a monolithic application into microservices.
 
@@ -32,7 +32,7 @@ Imagine a monolithic e-commerce website being refactored into microservices. The
 
 ---
 
-### Data Management in Microservices
+## Data Management in Microservices
 
 **Two Approaches:**
 
@@ -58,7 +58,7 @@ Imagine a monolithic e-commerce website being refactored into microservices. The
 
 ---
 
-### Saga Pattern
+## Saga Pattern
 
 **Purpose:** Managing distributed transactions across multiple databases, ensuring data consistency even if some operations fail.
 
@@ -95,7 +95,7 @@ Explain how you would handle a transaction involving transferring money between 
 
 ---
 
-### CQRS Pattern
+## CQRS Pattern
 
 **Purpose:** Separating read (query) operations from write (command) operations for better performance and scalability.
 
