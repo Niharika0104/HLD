@@ -1,6 +1,7 @@
 There are two types of architectures.They are monolithic and microservices.
 
-1.Monolithic:Its is a legacy way of designing systems.In this the entire code of the system is put in the single folder.
+1.Monolithic:Its is a legacy way of designing systems.In this the entire code of the system is put in the single 
+folder.
 There are instances where the code can become tightly coupled because of this.
 
 Disadvantages:
