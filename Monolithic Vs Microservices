@@ -24,3 +24,9 @@ services and hence db of each service will start a transaction but these transac
 If the trasaction is failing in one service and passing in another service then we can roll back them easily how we 
 would do it conventionally.
 
+
+Phases of the microservices architecture:
+Decomposing:It is decided based on the buisness logic or through the subdomains(DDD -Domain Driven Design)
+Database:Each service can have its own database or we could have a shared database for all the services that we have.
+
+Integration:We can do integration using API gateway.
