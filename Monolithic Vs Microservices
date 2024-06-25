@@ -14,3 +14,13 @@ Microservices:
 It's all about breaking an entire system into different parts (these are referred to as services) and these will 
 communicate with each other if required to get the job done.Now these services can be scaled and deployed 
 indivually.These leads to a loosely coupled architecture.
+
+Disadvantates of Microservices:
+1.If the system is not decomposed properly then it can lead to a tightly coupled architecture.
+2.Monitoring becomes difficult:If the change in one services causes breakage in other services,then it woould become 
+a little bit tedious to know which service has caused the code breakage.
+3.Transaction Management:Every service might have its own db.But we are doing a request and this requires both the 
+services and hence db of each service will start a transaction but these transactions are occuring independently.
+If the trasaction is failing in one service and passing in another service then we can roll back them easily how we 
+would do it conventionally.
+
