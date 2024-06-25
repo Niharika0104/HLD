@@ -1,32 +1,27 @@
-There are two types of architectures.They are monolithic and microservices.
-
-1.Monolithic:Its is a legacy way of designing systems.In this the entire code of the system is put in the single 
-folder.
-There are instances where the code can become tightly coupled because of this.
+Monolithic Architecture:
+Monolithic architecture is a traditional approach where the entire codebase of a system resides in a single repository or folder. This can lead to tight coupling between different modules or components.
 
 Disadvantages:
-1.This can lead to a tightly coupled architecture.
-2.Scalibility becomes difficult as the code is tightly coupled and a single change in line can cause re-deployment 
-of the entire application.
-3.CI jobs may take a lof of time.It would also take a lot of time to load the code into our IDE's.
 
-Microservices:
-It's all about breaking an entire system into different parts (these are referred to as services) and these will 
-communicate with each other if required to get the job done.Now these services can be scaled and deployed 
-indivually.These leads to a loosely coupled architecture.
+Tightly Coupled Architecture: Changes in one part of the code can affect other parts due to dependencies.
+Scalability Challenges: Scaling components independently is difficult, often requiring redeployment of the entire 
+application.
+Continuous Integration (CI) and Development Issues: CI jobs can be time-consuming, and loading the entire 
+codebase into IDEs can be cumbersome.
+Microservices Architecture:
+Microservices architecture involves breaking down a system into smaller, independent services that communicate
+with each other as needed. This promotes a loosely coupled architecture.
 
-Disadvantates of Microservices:
-1.If the system is not decomposed properly then it can lead to a tightly coupled architecture.
-2.Monitoring becomes difficult:If the change in one services causes breakage in other services,then it woould become 
-a little bit tedious to know which service has caused the code breakage.
-3.Transaction Management:Every service might have its own db.But we are doing a request and this requires both the 
-services and hence db of each service will start a transaction but these transactions are occuring independently.
-If the trasaction is failing in one service and passing in another service then we can roll back them easily how we 
-would do it conventionally.
+Disadvantages:
 
-
-Phases of the microservices architecture:
-Decomposing:It is decided based on the buisness logic or through the subdomains(DDD -Domain Driven Design)
-Database:Each service can have its own database or we could have a shared database for all the services that we have.
-
-Integration:We can do integration using API gateway.
+Potential for Tight Coupling: Poorly designed microservices can still result in dependencies and tight coupling.
+Monitoring Complexity: When changes in one service affect others, identifying the source of issues can be challenging.
+Transaction Management: Each microservice may have its own database, complicating transaction management and 
+rollback procedures.
+Phases of Microservices Architecture:
+Decomposing: Based on business logic or subdomains (Domain-Driven Design - DDD).
+Database Strategy: Each service can have its own database or share a common database.
+Communication: Services communicate via APIs, events, websockets, or other protocols.
+Integration: API gateways facilitate integration and manage interactions between services.
+Observability: Implementing tools for monitoring and observing the performance of services.
+Continuous Monitoring: Constantly monitor services to ensure performance and reliability.
