@@ -5,11 +5,11 @@ There are instances where the code can become tightly coupled because of this.
 
 Disadvantages:
 1.This can lead to a tightly coupled architecture.
-2.Scalibility becomes difficult as the code is tightly coupled and a single change in line can cause re-deployment of the
-entire application.
+2.Scalibility becomes difficult as the code is tightly coupled and a single change in line can cause re-deployment 
+of the entire application.
 3.CI jobs may take a lof of time.It would also take a lot of time to load the code into our IDE's.
 
 Microservices:
-It's all about breaking an entire system into different parts (these are referred to as services) and these will communicate
-with each other if required to get the job done.Now these services can be scaled and deployed indivually.These leads to a 
-loosely coupled architecture.
+It's all about breaking an entire system into different parts (these are referred to as services) and these will 
+communicate with each other if required to get the job done.Now these services can be scaled and deployed 
+indivually.These leads to a loosely coupled architecture.
