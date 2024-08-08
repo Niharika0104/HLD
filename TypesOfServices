@@ -5,6 +5,9 @@ Data Service: Connects to a data source within the system, not limited to databa
 Business Service/Business Process Service: A higher abstraction that builds on data services, often defined by business domains.
 Translation Service: Encapsulates third-party operations under your own facade.
 Edge Service: Serves data to users and external systems, including web and mobile devices.This is the actual one that is exposed.
+
+
+
 Cloud-Hosted vs. Cloud-Native:
 Cloud-Hosted Application:
 
@@ -17,3 +20,31 @@ Cloud-Native Application:
 A cloud-native application is designed from the ground up to operate in a cloud environment.
 It is built with cloud principles like microservices, containers, serverless architectures, and CI/CD pipelines in mind. 
 Cloud-native applications are inherently scalable, resilient, and optimized for dynamic cloud environments.
+Cloud-native applications are software programs designed to run in cloud computing environments, leveraging the cloud's unique capabilities, 
+such as scalability, resilience, and flexibility. Unlike traditional applications, 
+which might be migrated to the cloud with minimal changes, cloud-native apps are specifically built to maximize the benefits of cloud infrastructure.
+
+Key Characteristics of Cloud-Native Applications:
+Microservices Architecture:
+
+Cloud-native applications are typically composed of microservices—small, independent services that work together. Each microservice can be developed,
+deployed, and scaled independently.
+Containers:
+
+Containers, like those managed by Docker or Kubernetes, are a common way to package and deploy cloud-native applications. Containers provide consistency 
+across different environments (development, testing, production) and are lightweight compared to traditional virtual machines.
+DevOps Practices:
+
+Cloud-native development emphasizes DevOps practices, such as continuous integration and continuous deployment (CI/CD). This allows for rapid, iterative 
+development and deployment, reducing time to market and improving software quality.
+Scalability and Resilience:
+
+Cloud-native applications are designed to scale easily, both horizontally (adding more instances) and vertically (increasing instance capacity). 
+They are also resilient, with built-in mechanisms for fault tolerance, self-healing, and load balancing.
+Serverless Computing:
+
+Some cloud-native apps leverage serverless architectures, where the cloud provider automatically manages the infrastructure. This allows developers to focus on code rather than 
+server management.
+API-Driven Communication:
+
+These applications often rely on APIs for communication between services, enabling flexibility and ease of integration with other systems.
