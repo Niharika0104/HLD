@@ -1,0 +1,19 @@
+Types of Services:
+Service Types: Critical for understanding how various patterns are implemented.
+
+Data Service: Connects to a data source within the system, not limited to databases.
+Business Service/Business Process Service: A higher abstraction that builds on data services, often defined by business domains.
+Translation Service: Encapsulates third-party operations under your own facade.
+Edge Service: Serves data to users and external systems, including web and mobile devices.This is the actual one that is exposed.
+Cloud-Hosted vs. Cloud-Native:
+Cloud-Hosted Application:
+
+This refers to traditional applications that have been moved or deployed to the cloud. For example, 
+if you take an existing backend and deploy it on an EC2 instance, it’s a cloud-hosted application.
+It benefits from the cloud’s infrastructure, such as scalability and availability, 
+but it may not be designed to fully take advantage of cloud-native features.
+Cloud-Native Application:
+
+A cloud-native application is designed from the ground up to operate in a cloud environment.
+It is built with cloud principles like microservices, containers, serverless architectures, and CI/CD pipelines in mind. 
+Cloud-native applications are inherently scalable, resilient, and optimized for dynamic cloud environments.
